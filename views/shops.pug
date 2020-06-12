@@ -1,0 +1,83 @@
+
+html
+  head
+    title
+      | MMM Technologies 
+      title(<meta="" charset="utf-8")
+        title Bootstrap Example
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        style.
+         .card {
+           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+           transition: 0.3s;
+            width: 50%;
+            }
+         .card:hover {
+            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+            decoration:none;
+            }
+         .container {
+          padding: 6px 20px;
+            }
+style.
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      text-decoration: none;
+      }
+      th, td {
+      text-align: left;
+      padding: 8px;
+      }
+      tr:nth-child(even){background-color: #f2f2f2}
+      th {
+      background-color: #4CAF50;
+      color: white;
+      }
+body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href="#") MMM Technologies
+        ul.nav.navbar-nav
+          li.active
+            a(href="/logout") LogOut
+          li
+            a(href="/home") Home
+          li
+            a(href="/items") Items
+          li
+            a(href="/shops") Shops
+          li
+            a(href="/orders") Orders
+<h3 style="padding: 6px 250px">Shop Details</h3>
+<div  class="card" >
+
+table
+    tr
+        th Shop ID
+        th Shop Name
+        th Shop Address 
+        th  Username
+        th  Password
+    
+    each value,key in shop
+
+      tr
+        td #{value.shop_id}
+        td #{value.shop_name}
+        td #{value.shop_address}
+        td #{value.employee_username}
+        td #{value.employee_password}
+        
+
+</div>
+</body>
+</body>
+</html>
+
+    
+                  
